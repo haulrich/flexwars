@@ -1,0 +1,56 @@
+html {
+  body {
+    transition: all 0.5s;
+    box-sizing: border-box;
+    background: black url('../img/bg_starwars.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Alata',sans-serif;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    header {
+      font-family: 'Bowlby One SC', sans-serif;
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    main {
+      display: flex;
+      section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        flex-grow: 1;
+        border: 3px double yellow;
+        border-radius: 3px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        background: rgba(0,0,0,0.8);
+        p.description {
+          margin-top: auto;
+        }
+      }
+      &.view-grid {
+        flex-flow: row wrap;
+        section {
+          width: 30%;
+        }
+      }
+      &.view-list {
+        flex-flow: column nowrap;
+        section {
+          width: 100%;
+
+        }
+      }
+    }
+  }
+}
+
